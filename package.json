@@ -1,0 +1,47 @@
+{
+  "name": "audiodemo",
+  "productName": "Audiodemo",
+  "version": "0.0.0",
+  "description": "My tiptop app",
+  "license": "MIT",
+  "repository": "keithmattix/audiodemo",
+  "author": {
+    "name": "Keith Mattix",
+    "email": "clear2codeu@gmail.com",
+    "url": "keithmattix.com"
+  },
+  "electronVersion": "0.35.0",
+  "scripts": {
+    "test": "xo",
+    "start": "electron .",
+    "build": "electron-packager . $npm_package_productName --out=dist --ignore='^/dist$' --prune --asar --all --version=$npm_package_electronVersion"
+  },
+  "keywords": [
+    "electron-app",
+    "electron"
+  ],
+  "main": "main.js",
+  "dependencies": {
+    "bumpkit": "0.0.2",
+    "electron-debug": "^0.5.0",
+    "jquery": "^2.1.4",
+    "node-sass": "^3.4.2",
+    "play-audio": "^0.1.0"
+  },
+  "devDependencies": {
+    "electron-packager": "^5.0.0",
+    "electron-prebuilt": "^0.35.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-sass": "^2.1.0",
+    "xo": "^0.11.1"
+  },
+  "xo": {
+    "esnext": true,
+    "envs": [
+      "node",
+      "browser"
+    ]
+  }
+}

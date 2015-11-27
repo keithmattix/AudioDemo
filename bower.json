@@ -1,0 +1,29 @@
+{
+  "name": "audiodemo",
+  "description": "My tiptop app",
+  "main": "index.js",
+  "authors": [
+    "Keith Mattix"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "electron-app",
+    "electron"
+  ],
+  "moduleType": [
+    "es6",
+    "node"
+  ],
+  "homepage": "http://keithmattix.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.5.3"
+  }
+}
